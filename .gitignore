@@ -1,0 +1,44 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.so
+*.egg-info/
+*.egg
+
+# Virtual envs
+.venv/
+venv/
+env/
+
+# IDE / editor
+.vscode/
+.idea/
+*.code-workspace
+
+# Build / logs / cache
+dist/
+build/
+*.log
+ats_app.log
+.streamlit/
+.pytest_cache/
+.cache/
+
+# OS junk
+.DS_Store
+Thumbs.db
+
+# Secrets / configs
+.env
+.env.*
+*.pem
+*.key
+*.crt
+
+# Node / Next.js
+node_modules/
+.next/
+out/
+
