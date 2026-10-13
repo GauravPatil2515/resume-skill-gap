@@ -1,0 +1,17 @@
+Senior Machine Learning & Python Engineer
+
+About the Role:
+We are seeking a Senior Machine Learning Engineer with strong experience in Python, PyTorch, Scikit-learn, SQL, and Docker to design, build, and deploy production ML pipelines.
+
+Key Responsibilities:
+• Architect, train, and deploy machine learning models using Python, PyTorch, and Scikit-learn.
+• Design robust ETL and feature engineering data pipelines using SQL, Pandas, and PostgreSQL.
+• Containerize microservices and model inference APIs using Docker, FastAPI, and Linux.
+• Implement automated CI/CD workflows and version control with Git and GitHub Actions.
+• Optimize model latency and database query throughput for high-scale distributed systems.
+
+Requirements:
+• 4+ years of professional experience with Python, PyTorch, Scikit-learn, and SQL.
+• Hands-on experience with Docker, FastAPI, Linux, and Git.
+• Strong foundation in machine learning, statistics, feature engineering, and data analysis.
+• Experience with cloud deployments and Kubernetes is a plus.

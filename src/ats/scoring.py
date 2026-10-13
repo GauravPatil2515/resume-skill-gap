@@ -1,5 +1,3 @@
-from __future__ import annotations
-
 import re
 from dataclasses import asdict, dataclass
 from datetime import datetime
@@ -46,6 +44,8 @@ class AdvancedScore:
     jd_skill_count: int
     resume_skill_count: int
     details: Tuple[MatchDetail, ...]
+    bm25_score: Optional[float] = None
+    jaccard_similarity: Optional[float] = None
 
     def to_dict(self) -> Dict:
         d = asdict(self)
@@ -54,6 +54,10 @@ class AdvancedScore:
         d["tfidf_cosine"] = round(self.tfidf_cosine, 4)
         if self.semantic_cosine is not None:
             d["semantic_cosine"] = round(self.semantic_cosine, 4)
+        if self.bm25_score is not None:
+            d["bm25_score"] = round(self.bm25_score, 4)
+        if self.jaccard_similarity is not None:
+            d["jaccard_similarity"] = round(self.jaccard_similarity, 4)
         d["recency_factor"] = round(self.recency_factor, 3)
         d["composite"] = round(float(self.composite), 1)
         # Marshal MatchDetail dataclasses
