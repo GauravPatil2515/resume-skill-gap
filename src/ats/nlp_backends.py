@@ -64,7 +64,6 @@ _LOG.setLevel(os.getenv("NLP_LOG_LEVEL", "WARNING").upper())
 _LLM_MODEL_DEFAULT = os.getenv(
     "NLP_LLM_MODEL", os.getenv("LLM_MODEL", "anthropic/claude-3-haiku-20240307")
 )
-print(f"🔍 DEBUG: Model being used: {_LLM_MODEL_DEFAULT}")
 _LLM_MAX_TOKENS = int(os.getenv("NLP_LLM_MAX_TOKENS", "1200"))
 _CHUNK_SIZE = int(os.getenv("NLP_CHUNK_SIZE", "3500"))  # characters
 _CHUNK_OVERLAP = int(os.getenv("NLP_CHUNK_OVERLAP", "200"))  # characters
