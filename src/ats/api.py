@@ -34,6 +34,10 @@ app = FastAPI(title="ResuMatch ATS API", version="0.2")
 ALLOWED_ORIGINS = [
     "http://localhost:3000",
     "http://127.0.0.1:3000",
+    "http://localhost:3001",
+    "http://127.0.0.1:3001",
+    "http://localhost:3005",
+    "http://127.0.0.1:3005",
     "http://localhost:8501",
 ]
 if extra := os.getenv("CORS_ORIGINS"):
